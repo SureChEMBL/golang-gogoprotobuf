@@ -1,0 +1,277 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: golang-gogoprotobuf
+Source: https://github.com/gogo/protobuf
+
+Files: *
+Copyright:
+  2008 Google Inc.
+  2010-2012, The Go Authors.
+  2013, Vastech SA (PTY) LTD.
+License: BSD-3-Clause
+
+Files:
+    Makefile
+    codec/*
+    gogoproto/Makefile
+    gogoproto/doc.go
+    gogoproto/gogo.proto
+    gogoproto/helper.go
+    io/*
+    plugin/*
+    proto/decode_gogo.go
+    proto/extensions_gogo.go
+    proto/lib_gogo.go
+    proto/pointer_unsafe_gogo.go
+    proto/properties_gogo.go
+    proto/skip_gogo.go
+    proto/text_gogo.go
+    protoc-gen-combo/*
+    protoc-gen-gofast/*
+    protoc-gen-gogo/descriptor/helper.go
+    protoc-gen-gogo/generator/helper.go
+    protoc-gen-gogofast/*
+    protoc-gen-gogofaster/*
+    protoc-gen-gogoslick/*
+    protoc-gen-gostring/*
+    protoc-min-version/*
+    sortkeys/*
+    test/Makefile
+    test/asymetric-issue125/Makefile
+    test/asymetric-issue125/asym.proto
+    test/asymetric-issue125/asym_test.go
+    test/asymetric-issue125/pop.go
+    test/bug_test.go
+    test/casttype/Makefile
+    test/casttype/casttype.proto
+    test/casttype/combos/both/casttype.proto
+    test/casttype/combos/marshaler/casttype.proto
+    test/casttype/combos/neither/casttype.proto
+    test/casttype/combos/unmarshaler/casttype.proto
+    test/casttype/combos/unsafeboth/casttype.proto
+    test/casttype/combos/unsafemarshaler/casttype.proto
+    test/casttype/combos/unsafeunmarshaler/casttype.proto
+    test/casttype/mytypes.go
+    test/castvalue/Makefile
+    test/castvalue/castvalue.proto
+    test/castvalue/combos/both/castvalue.proto
+    test/castvalue/combos/both/mytypes.go
+    test/castvalue/combos/marshaler/castvalue.proto
+    test/castvalue/combos/marshaler/mytypes.go
+    test/castvalue/combos/unmarshaler/castvalue.proto
+    test/castvalue/combos/unmarshaler/mytypes.go
+    test/castvalue/combos/unsafeboth/castvalue.proto
+    test/castvalue/combos/unsafeboth/mytypes.go
+    test/castvalue/combos/unsafemarshaler/castvalue.proto
+    test/castvalue/combos/unsafemarshaler/mytypes.go
+    test/castvalue/combos/unsafeunmarshaler/castvalue.proto
+    test/castvalue/combos/unsafeunmarshaler/mytypes.go
+    test/castvalue/mytypes.go
+    test/combos/both/bug_test.go
+    test/combos/both/thetest.proto
+    test/combos/both/uuid.go
+    test/combos/marshaler/bug_test.go
+    test/combos/marshaler/thetest.proto
+    test/combos/marshaler/uuid.go
+    test/combos/unmarshaler/bug_test.go
+    test/combos/unmarshaler/thetest.proto
+    test/combos/unmarshaler/uuid.go
+    test/combos/unsafeboth/bug_test.go
+    test/combos/unsafeboth/thetest.proto
+    test/combos/unsafeboth/uuid.go
+    test/combos/unsafemarshaler/bug_test.go
+    test/combos/unsafemarshaler/thetest.proto
+    test/combos/unsafemarshaler/uuid.go
+    test/combos/unsafeunmarshaler/bug_test.go
+    test/combos/unsafeunmarshaler/thetest.proto
+    test/combos/unsafeunmarshaler/uuid.go
+    test/custom-dash-type/*
+    test/custom/*
+    test/custombytesnonstruct/Makefile
+    test/custombytesnonstruct/custombytesnonstruct_test.go
+    test/custombytesnonstruct/customtype.go
+    test/custombytesnonstruct/proto.proto
+    test/dashfilename/*
+    test/defaultconflict/*
+    test/embedconflict/*
+    test/empty-issue70/Makefile
+    test/empty-issue70/empty.proto
+    test/empty-issue70/empty_test.go
+    test/enumcustomname/Makefile
+    test/enumcustomname/enumcustomname.proto
+    test/enumprefix/Makefile
+    test/enumprefix/enumprefix.proto
+    test/enumstringer/Makefile
+    test/enumstringer/enumstringer.proto
+    test/enumstringer/string.go
+    test/example/Makefile
+    test/example/example.proto
+    test/example/example_test.go
+    test/extension_test.go
+    test/filedotname/Makefile
+    test/filedotname/file.dot.proto
+    test/fuzztests/Makefile
+    test/fuzztests/fuzz.proto
+    test/fuzztests/fuzz_test.go
+    test/group/Makefile
+    test/group/group.proto
+    test/importdedup/Makefile
+    test/importdedup/importdedup_test.go
+    test/importdedup/proto.proto
+    test/importdedup/subpkg/customtype.go
+    test/importdedup/subpkg/subproto.proto
+    test/indeximport-issue72/Makefile
+    test/indeximport-issue72/index/index.proto
+    test/indeximport-issue72/indeximport.proto
+    test/issue34/Makefile
+    test/issue34/issue34_test.go
+    test/issue34/proto.proto
+    test/issue42order/Makefile
+    test/issue42order/issue42.proto
+    test/issue42order/order_test.go
+    test/issue8/Makefile
+    test/issue8/proto.proto
+    test/mapsproto2/Makefile
+    test/mapsproto2/combos/both/mapsproto2_test.go
+    test/mapsproto2/combos/marshaler/mapsproto2_test.go
+    test/mapsproto2/combos/neither/mapsproto2_test.go
+    test/mapsproto2/combos/unmarshaler/mapsproto2_test.go
+    test/mapsproto2/combos/unsafeboth/mapsproto2_test.go
+    test/mapsproto2/combos/unsafemarshaler/mapsproto2_test.go
+    test/mapsproto2/combos/unsafeunmarshaler/mapsproto2_test.go
+    test/mapsproto2/mapsproto2_test.go.in
+    test/mixbench/mixbench.go
+    test/moredefaults/Makefile
+    test/moredefaults/md.proto
+    test/moredefaults/md_test.go
+    test/nopackage/Makefile
+    test/nopackage/nopackage.proto
+    test/nopackage/nopackage_test.go
+    test/oneof/Makefile
+    test/oneof/combos/both/one.proto
+    test/oneof/combos/marshaler/one.proto
+    test/oneof/combos/neither/one.proto
+    test/oneof/combos/unmarshaler/one.proto
+    test/oneof/combos/unsafeboth/one.proto
+    test/oneof/combos/unsafemarshaler/one.proto
+    test/oneof/combos/unsafeunmarshaler/one.proto
+    test/oneof/one.proto
+    test/oneof3/Makefile
+    test/oneof3/combos/both/one.proto
+    test/oneof3/combos/marshaler/one.proto
+    test/oneof3/combos/neither/one.proto
+    test/oneof3/combos/unmarshaler/one.proto
+    test/oneof3/combos/unsafeboth/one.proto
+    test/oneof3/combos/unsafemarshaler/one.proto
+    test/oneof3/combos/unsafeunmarshaler/one.proto
+    test/oneof3/one.proto
+    test/oneofembed/Makefile
+    test/oneofembed/oneofembed.proto
+    test/packed/Makefile
+    test/packed/packed.proto
+    test/packed/packed_test.go
+    test/protosize/Makefile
+    test/protosize/protosize.proto
+    test/protosize/protosize_test.go
+    test/required/Makefile
+    test/required/requiredexample.proto
+    test/required/requiredexamplepb_test.go
+    test/sizeunderscore/Makefile
+    test/sizeunderscore/sizeunderscore.proto
+    test/tags/Makefile
+    test/tags/tags.proto
+    test/tags/tags_test.go
+    test/theproto3/Makefile
+    test/theproto3/combos/both/proto3_test.go
+    test/theproto3/combos/marshaler/proto3_test.go
+    test/theproto3/combos/neither/proto3_test.go
+    test/theproto3/combos/unmarshaler/proto3_test.go
+    test/theproto3/combos/unsafeboth/proto3_test.go
+    test/theproto3/combos/unsafemarshaler/proto3_test.go
+    test/theproto3/combos/unsafeunmarshaler/proto3_test.go
+    test/theproto3/proto3_test.go.in
+    test/thetest.proto
+    test/unmarshalmerge/Makefile
+    test/unmarshalmerge/unmarshalmerge.proto
+    test/unmarshalmerge/unmarshalmerge_test.go
+    test/unrecognized/Makefile
+    test/unrecognized/oldnew_test.go
+    test/unrecognized/unrecognized.proto
+    test/unrecognizedgroup/Makefile
+    test/unrecognizedgroup/oldnew_test.go
+    test/unrecognizedgroup/unrecognizedgroup.proto
+    test/uuid.go
+    test/uuid_test.go
+    vanity/command/*
+    vanity/enum.go
+    vanity/field.go
+    vanity/file.go
+    vanity/foreach.go
+    vanity/msg.go
+    vanity/test/Makefile
+    vanity/test/gogovanity.proto
+    vanity/test/proto3.proto
+    vanity/test/vanity.proto
+    vanity/test/vanity_test.go
+    version/*
+Copyright:
+    2013,2015-2016 the GoGo Authors
+License: BSD-2-Clause
+
+Files: debian/*
+Copyright: 2014 Jelmer Vernooij <jelmer@debian.org>
+           2015 Alexandre Viau <alexandre@alexandreviau.net>
+           2016 Dmitry Smirnov <onlyjob@debian.org>
+License: BSD-3-Clause
+Comment:
+ Consider my changes as BSD-2-Clause or BSD-3-Clause licensed.
+  -- Dmitry Smirnov <onlyjob@debian.org>
+
+License: BSD-2-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ ․
+  1. Redistributions of source code must retain the above copyright notice,
+     this list of conditions and the following disclaimer.
+ ․
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+ ․
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+License: BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ .
+   * Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+     copyright notice, this list of conditions and the following disclaimer
+     in the documentation and/or other materials provided with the
+     distribution.
+   * Neither the name of Google Inc. nor the names of its
+     contributors may be used to endorse or promote products derived from
+     this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE=1
+# Use go-1.7 on certain architectures (#871914).
+ifneq (,$(filter $(DEB_HOST_ARCH),ppc64el))
+export PATH := /usr/lib/go-1.7/bin:$(PATH)
+endif
+
+%:
+	dh $@ --buildsystem=golang --with=golang --builddirectory=_build
+
+override_dh_auto_build:
+	# Need to exclude packages without .go files.
+	DH_GOLANG_EXCLUDES=test/sizerconflict dh_auto_build
+
+override_dh_auto_test:
+ifneq (,$(filter $(DEB_HOST_ARCH),armhf))
+## Ignore test failures:
+##    https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=824717
+##    https://github.com/gogo/protobuf/issues/164
+	-PATH="$(CURDIR)/_build/bin:$$PATH" dh_auto_test
+else
+	PATH="$(CURDIR)/_build/bin:$$PATH" dh_auto_test
+endif

@@ -1,0 +1,131 @@
+golang-gogoprotobuf (0.4-1) unstable; urgency=high
+
+  * Add myself to Uploaders.
+  * New upstream release. Closes: 871915.
+  * Force usage of go 1.7 on ppc64el. Closes: 871914.
+  * Lintian now fails to recognise the go binaries: add overrides.
+  * debian/control: Update Standards-Version (no changes).
+  * debian/control: Mark package as autopkgtest-able.
+  * debian/rules: Replace DH_GOPKG with XS-Go-Import-Path.
+  * debian/rules: Exclude from compilation packages without .go files.
+
+ -- Martín Ferrari <tincho@debian.org>  Tue, 29 Aug 2017 04:26:42 +0000
+
+golang-gogoprotobuf (0.3+git20170120.144.265e960d-2) unstable; urgency=medium
+
+  * Replace golang-go with golang-any in Build-Depends, remove golang-go from Depends
+
+ -- Konstantinos Margaritis <markos@debian.org>  Wed, 09 Aug 2017 12:37:26 +0300
+
+golang-gogoprotobuf (0.3+git20170120.144.265e960d-1) unstable; urgency=medium
+
+  * New upstream snapshot.  This ensures generated code can be compiled
+    using the golang-grpc 1.x package.
+
+ -- Tim Potter <tpot@hpe.com>  Wed, 25 Jan 2017 08:39:04 +1100
+
+golang-gogoprotobuf (0.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release (Closes: #835161).
+    - removed obsolete "arch32.patch".
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Fri, 26 Aug 2016 09:11:56 +1000
+
+golang-gogoprotobuf (0.2-5) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Dmitry Smirnov ]
+  * Ignore test failures on armhf (Closes: #824717).
+
+  [ Paul Tagliamonte ]
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Tim Potter ]
+  * Add me as uploader
+
+  [ Jelmer Vernooĳ ]
+  * Unicodify my surname.
+  * Move debian-specific ignores to debian/.gitignore.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 10 Jul 2016 18:46:25 +1000
+
+golang-gogoprotobuf (0.2-4) unstable; urgency=medium
+
+  * Team upload.
+  * Standards-Version: 3.9.8.
+  * Re-build with fixed dh-golang_1.15.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sat, 16 Apr 2016 08:04:06 +1000
+
+golang-gogoprotobuf (0.2-3) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 14 Apr 2016 20:54:10 +1000
+
+golang-gogoprotobuf (0.2-2) unstable; urgency=medium
+
+  * New upstream "arch32.patch" to fix FTBFS (Closes: #819994).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 14 Apr 2016 19:50:36 +1000
+
+golang-gogoprotobuf (0.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Standards-Version: 3.9.7.
+  * Vcs-Browser URL to HTTPS.
+  * Enabled post-build tests.
+  * Don't install "/usr/bin/mixbench".
+  * Build-Depends += "protobuf-compiler".
+  * Split "golang-gogoprotobuf-dev" into "golang-github-gogo-protobuf-dev"
+    and "gogoprotobuf" (Closes: #798708).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 28 Mar 2016 12:28:05 +1100
+
+golang-gogoprotobuf (0.0~git20150828.0.6cab0cc-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version.
+  * Remove myself from uploaders.
+  * Include gogo.proto (Closes: #797493).
+
+ -- Alexandre Viau <alexandre@alexandreviau.net>  Mon, 31 Aug 2015 00:08:18 -0400
+
+golang-gogoprotobuf (0.0~git20150717-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Added code.google.com/p/gogoprotobuf symlink for backwards compatibility
+
+ -- Alexandre Viau <alexandre@alexandreviau.net>  Sat, 18 Jul 2015 11:20:47 -0400
+
+golang-gogoprotobuf (0.0~git20150426-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Bump standards version to 3.9.6 (no changes).
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sun, 26 Apr 2015 08:39:16 +0000
+
+golang-gogoprotobuf (0.0~git20140719-2) experimental; urgency=medium
+
+  * Change debian-branch in gbp.conf to 'unstable'.
+  * Change maintainer to pkg-go, move myself to uploaders.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sat, 15 Nov 2014 21:29:15 +0000
+
+golang-gogoprotobuf (0.0~git20140719-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add branch to Vcs-Git header.
+  * Add protoc-gen-gogo.1 manpage.
+  * Don't install mixbench.
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Tue, 15 Jul 2014 17:34:04 +0200
+
+golang-gogoprotobuf (0.0~git20140427-1) unstable; urgency=medium
+
+  * Initial release. Closes: #746190
+
+ -- Jelmer Vernooij <jelmer@debian.org>  Sun, 27 Apr 2014 23:17:30 +0200
